@@ -19,7 +19,7 @@ const artworks = [{}, {}, {}, {}, {}];
 function HomePage() {
     return (
         <>
-        <Panel />
+        <Panel title="Art is beautiful, Art is life, Buy Arts" bg="homepage"/>
         <SearchArtist /> 
         <div className="section-title">
             <h2 className="title">Featured Artworks</h2>

@@ -1,17 +1,30 @@
 @import "../../assets/commonStyles/color-pallet.scss";
 
-.panel-wrap{
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 805px;
+
+.panel-wrap-bg-1{
     background-image:
     radial-gradient(
       circle closest-side,
       black,
       transparent
     ), url("../../assets/images/main-img.jpeg");
+}
+
+.panel-wrap-bg-2{
+    background-image:
+    radial-gradient(
+      circle closest-side,
+      black,
+      transparent
+    ), url("../../assets/images/artlistWalpaper.jpg");
+}
+
+.panel-wrap{
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 805px;
     .panel-content{
         display: flex;
         justify-content: center;

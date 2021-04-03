@@ -4,11 +4,29 @@
     display: flex;
     justify-content: center;
     .search-input-wrapper{
-     margin-right: 1rem;   
+        width: 20%;
+        position: relative;
+        margin-right: 1rem;
+        border-radius: 5px;
+        display: flex;
+        border: 0.5px solid #c58023;
+        align-items: center;
     }
     .search-input{
-        padding: 12px 5rem;
-        border-radius: 14px;
-        border: 0.5px solid #c58023;
+        margin: 0;
+        outline: 0;
+        padding: 0rem 0.7em;
+        width: 100%;
+        -webkit-appearance: none;
+        line-height: 1.21428571em;
+        background: #fff;
+        border: none;
+        border-radius: 0.28571429rem;
+        box-shadow: inset 0 0 0 0 transparent;
+        transition: color 0.1s ease, border-color 0.1s ease;
     }
+}
+
+.left-icon{
+    margin-left: 10px;
 }

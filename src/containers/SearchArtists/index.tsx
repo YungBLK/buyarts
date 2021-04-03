@@ -3,7 +3,7 @@ import React, { useState } from "react";
 
 // parts
 import Button from "../../components/Button";
-
+import IconRenderComponent from "../../components/IconRenderComponent"
 // styles
 import "./searchArtists.scss"
 
@@ -42,6 +42,7 @@ function SearchArtists() {
     return (
             <form className="search-wrapper" onSubmit={(event) => handleSubmit(event)}>
             <div className="search-input-wrapper">
+                 <IconRenderComponent className="left-icon" iconName="search" /> 
                 <input 
                     className="search-input"
                     name="artistName"
@@ -56,7 +57,7 @@ function SearchArtists() {
                     name="ArtsCategory"
                     value={searchArtistsInput.artsCategory}
                     onChange={handleArtCategoryChange}
-                    type="text"
+                    type=""
                     placeholder="Choose category" />
             </div>
             <Button text="Search" buttonClass="cta-secondary" type="submit" />

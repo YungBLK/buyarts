@@ -8,6 +8,7 @@ import { BrowserRouter as Router,
 
 // Pages
 import HomePage from './views/home';
+import Gallery from "./views/gallery";
 import NoMatchPage from "./views/noMatchPage";
 
 // parts 
@@ -26,7 +27,7 @@ function App() {
     <Header />
       <Switch>
       <Route path="/gallery">
-        <h1>oi</h1>
+       <Gallery />
       </Route>
       <Route path="/artists">
         <h1>oi</h1>
