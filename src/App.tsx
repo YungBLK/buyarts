@@ -19,8 +19,6 @@ import "./assets/baseStyles/resetDefault.scss";
 import "./assets/baseStyles/baseStyles.scss";
 
 
-
-
 function App() {
   return (
     <>
