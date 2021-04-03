@@ -12,7 +12,7 @@ import { PanelInterface } from "./types";
 
 function Panel(props: PanelInterface) {
     return (
-        <main className={`panel-wrap ${props.bg === "homepage" ? "panel-wrap-bg-1": "panel-wrap-bg-2"}`}>
+        <main className={`panel-wrap ${props.bg === "homepage" ? "panel-wrap-bg-1 panel-wrap-hg-1": "panel-wrap-bg-2 panel-wrap-hg-2"}`}>
             <div className="panel-content">
                 <h2 className="panel-title">{props.title}</h2>
                 <div className="panel-body">
