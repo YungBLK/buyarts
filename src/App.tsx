@@ -1,11 +1,51 @@
+// packages
 import React from 'react';
+
+import { BrowserRouter as Router,
+  Switch,
+  Route
+ } from "react-router-dom"
+
+// Pages
 import HomePage from './views/home';
+import NoMatchPage from "./views/noMatchPage";
+
+// parts 
+import Header from "./containers/Header";
+import Footer from "./containers/Footer";
+
+// styles
 import "./assets/baseStyles/resetDefault.scss";
 import "./assets/baseStyles/baseStyles.scss";
 
+
+
+
 function App() {
   return (
-      <HomePage />
+    <>
+    <Router>
+    <Header />
+      <Switch>
+      <Route path="/gallery">
+        <h1>oi</h1>
+      </Route>
+      <Route path="/artists">
+        <h1>oi</h1>
+      </Route>
+      <Route path="/login">
+        <h1>oi</h1>
+      </Route>
+      <Route exact path="/">
+        <HomePage />
+      </Route>
+      <Route path="*">
+          <NoMatchPage />
+      </Route>
+    </Switch>
+    <Footer />
+   </Router>
+  </>
   );
 }
 
